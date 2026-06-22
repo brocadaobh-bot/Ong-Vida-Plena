@@ -1,0 +1,14 @@
+-- ============================================================
+-- Migration 009: Seed Inicial
+-- Política de privacidade padrão e configurações base
+-- ============================================================
+
+-- Política de privacidade inicial
+INSERT INTO privacy_policies (version, title, content, published_at, is_active)
+VALUES (
+  '1.0',
+  'Política de Privacidade — ONG Vida Plena',
+  E'## Política de Privacidade da ONG Vida Plena\n\n**Versão 1.0**\n\n### 1. Identificação do Controlador\n\nA ONG Vida Plena, pessoa jurídica de direito privado sem fins lucrativos, é a controladora dos seus dados pessoais nesta plataforma.\n\n**Encarregado de Dados (DPO):** privacidade@vidaplena.org.br\n\n### 2. Dados Coletados e Finalidades\n\n| Dado | Finalidade | Base Legal |\n|---|---|---|\n| Nome completo | Identificação e certificados | Execução de contrato |\n| E-mail e telefone | Comunicação sobre atividades | Consentimento |\n| CPF/RG | Cadastro e obrigações legais | Obrigação legal |\n| Data de nascimento | Perfil e estatísticas | Legítimo interesse |\n| Endereço | Atividades presenciais | Execução de contrato |\n| Escolaridade e emprego | Relatórios de impacto social | Consentimento |\n| Histórico de cursos | Gestão e certificação | Execução de contrato |\n\n### 3. Compartilhamento\n\nSeus dados **não são vendidos ou cedidos** a terceiros. Podem ser compartilhados apenas com:\n- Parceiros institucionais para prestação de contas, sob confidencialidade.\n- Autoridades públicas quando exigido por lei.\n\n### 4. Seus Direitos (LGPD — Lei 13.709/2018)\n\nVocê tem direito a:\n- **Acesso**: consultar os dados que temos sobre você.\n- **Correção**: solicitar correção de dados incorretos ou desatualizados.\n- **Exclusão**: solicitar a eliminação de dados tratados com base no consentimento.\n- **Portabilidade**: receber seus dados em formato estruturado.\n- **Revogação**: revogar o consentimento a qualquer momento.\n- **Oposição**: opor-se ao tratamento em determinadas situações.\n\nPara exercer esses direitos, acesse **Minha Conta > Meus Dados** na plataforma.\n\n### 5. Segurança\n\nAdotamos medidas técnicas e organizacionais, incluindo:\n- Controle de acesso por perfil (RBAC).\n- Criptografia de senhas.\n- Logs de auditoria de ações sensíveis.\n- Comunicação criptografada (HTTPS).\n\n### 6. Retenção\n\nSeus dados são mantidos pelo período necessário para as finalidades declaradas ou conforme exigido por obrigação legal. Após esse período, são anonimizados ou excluídos.\n\n### 7. Cookies\n\nUsamos apenas cookies funcionais para manter sua sessão autenticada. Não utilizamos cookies de rastreamento ou publicidade.\n\n### 8. Contato\n\n**E-mail:** privacidade@vidaplena.org.br  \n**Endereço:** [Endereço da ONG]\n\n*Última atualização: conforme data de publicação desta versão.*',
+  NOW(),
+  TRUE
+);
